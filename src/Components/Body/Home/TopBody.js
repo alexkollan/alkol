@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { Card, Elevation } from "@blueprintjs/core";
+import { Card, Elevation, Button } from "@blueprintjs/core";
 import myFace from '../../../images/mapaSquare.jpg';
+import MediaQuery from 'react-responsive';
 
 class TopBody extends Component {
-    constructor(props){
-      super(props);
+
+    scroll =()=>{
+      document.getElementById('cards').scrollIntoView();
     }
     render() {
         let name = '<Alex />'
@@ -12,14 +14,19 @@ class TopBody extends Component {
 
         <div >
            
-           <Card style={{backgroundColor: '#182026'}} className="cardTop" interactive={false} elevation={Elevation.ZERO}>
+           <Card  style={{backgroundColor: '#182026'}} className="cardTop" interactive={false} elevation={Elevation.ZERO}>
             <div className="topContainer">
-              <img className="myFace" src={myFace} />
+              <img className="myFace" src={myFace} alt="Pic of my face." />
               <div className="greetText">
                 <h1>Hey y'all! My name is <code>{name}</code></h1><br/>
                 <h4 style={{color: '#A7B6C2'}}>Welcome to my all around site, <br/>where you can get to know me better ;)</h4>
               </div>
             </div>
+            <MediaQuery maxWidth={767}>
+              <div>
+                <Button onClick={this.scroll} large minimal fill text={<i className="fa fa-chevron-down scrollBtn" aria-hidden="true"></i>}/>
+              </div>
+            </MediaQuery>
             </Card>
         </div>
       );

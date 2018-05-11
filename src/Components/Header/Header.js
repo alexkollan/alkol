@@ -3,9 +3,7 @@ import {Navbar} from '@blueprintjs/core';
 import Menu from './Menu'
 import Title from './Title'
 class Header extends Component {
-    constructor(props){
-        super(props);
-    }
+
     handleButtonClick=(btn)=>{
       this.props.pressedButton(btn)
     }

@@ -3,9 +3,7 @@ import Cards from './Cards';
 import TopBody from './TopBody';
 
 class Home extends Component {
-    constructor(props){
-      super(props);
-    }
+
     render() {
       return (
         <div className="homeContainer">
