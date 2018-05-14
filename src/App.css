@@ -1,5 +1,6 @@
 @import "~@blueprintjs/core/lib/css/blueprint.css";
 @import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+@import "test.css";
 .App {
   text-align: center;
 }
@@ -82,6 +83,116 @@ body{
   border: 2px solid #BFCCD6;
 }
 
+.cvContainer{
+  /* display: flex; */
+  width: 100%;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  
+}
+.cvPhoto{
+  width: 150px;
+  height: 150px;
+  /* margin: 10px auto; */
+  /* border-radius: 10px; */
+  position: relative;
+  z-index: -2;
+}
+.imgContainer{
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  background: url('./images/mapaSquare.jpg');
+  background-size: contain;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+  border-radius: 10px;
+}
+.leftPanel{
+  border-radius: 10px;
+  padding: 0px;
+  width: 200px;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 1px 1px 10px rgba(0,0,0,1);
+
+  min-width: 260px;
+  position: fixed;
+  margin-bottom: 30px;
+}
+.rightPanel{
+  /* border-radius: 10px; */
+  margin-left: 300px;
+
+  min-width: 500px;
+  max-width: 953px;
+  /* box-shadow: 0px 0px 3px rgba(0,0,0,1); */
+  
+}
+.contactDetails{
+  margin: 0 auto;
+  max-width: 300px;
+}
+.iconColor{
+  color: #BFCCD6;
+  font-size: 1.2em;
+  margin-top: 1px;
+}
+.contactText{
+  margin: 10px 0px 10px 0px;
+}
+.cvElement{
+  /* border: 1px solid white; */
+  max-width:90%;
+  margin: 0 auto;
+  word-wrap: break-word;
+  text-align: justify;
+  padding: 10px 0px 10px 0px;
+}
+.cvElementContainer{
+  /* width: 1000px; */
+  /* border-bottom: 1px  solid white;
+  border-right: 1px  solid white;
+  border-left: 1px  solid white; */
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  
+}
+.yearTitleContainer{
+  display: flex;
+}
+.cvYear{
+  /* border: 1px solid white; */
+  width: 20%;
+  /* float: left; */
+  border-right: 1px solid rgba(200,200,200,0.4);
+  font-size: 1.2em;
+}
+.cvTitle{
+  /* border: 1px solid white; */
+  /* float: left; */
+  margin-left: 50px; 
+  text-align: left;
+  font-size: 1.3em;
+  width: 79%;
+}
+.rightPanelTopContainer{
+  display: flex;
+  height: 200px;
+  /* position: relative; */
+  /* justify-content: center; */
+  /* width: 100%; */
+}
+.skills, .languages{
+  flex-grow: 1;
+  width: 50%;
+  /* width: 100px; */
+  /* flex:1; */
+  /* height: 100%; */
+  /* position: absolute; */
+  text-align: justify;
+}
+
 @media only screen and (max-width: 1200px) {
   body {
       /* background-color: red; */
@@ -92,6 +203,7 @@ body{
   }
   .cvCardContainer{
     margin: 30px 50px 30px 50px;
+    
   }
   .homeIcons{
     font-size: 5em;

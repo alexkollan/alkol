@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Button, Card, Elevation, ButtonGroup, Intent, Popover, Menu, MenuItem, MenuDivider } from "@blueprintjs/core";
 import Element from './Element';
-import data from './data.json'
+import timeline from '../../../data/timeline.json';
 import MediaQuery from 'react-responsive';
+import CVlayout from './CVlayout'
 
 class CV extends Component {
     constructor(props){
@@ -12,45 +13,46 @@ class CV extends Component {
       }
     }
 
-    componentDidMount() {
-      this.renderAll();
+    componentWillMount() {
+      // this.renderAll();
+      this.displayCV();
     }
 
     renderAll = () => {
       let allEvents = [];
-      Object.keys(data).map((item, key)=>{
+      Object.keys(timeline).map((item, key)=>{
        
        
-        switch (data[item].characteristic[0]) {
+        switch (timeline[item].characteristic[0]) {
           case 'education':
-            allEvents.push(<Element color='#6B291A' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+            allEvents.push(<Element color='#6B291A' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
             break;
             case 'hobbies':
-            allEvents.push(<Element color='#008075' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+            allEvents.push(<Element color='#008075' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
             break;
             case 'life':
-            allEvents.push(<Element color='#0E5A8A' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+            allEvents.push(<Element color='#0E5A8A' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
             break;
             case 'work':
-            allEvents.push(<Element color='#A66321' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+            allEvents.push(<Element color='#A66321' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
             break;  
             case 'athletics':
-            allEvents.push(<Element color='#008075' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+            allEvents.push(<Element color='#008075' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
             break;
             case 'creative':
-            allEvents.push(<Element color='#008075' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+            allEvents.push(<Element color='#008075' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
             break;  
             case 'it':
-            allEvents.push(<Element color='#A66321' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+            allEvents.push(<Element color='#A66321' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
             break;   
             case 'other':
-            allEvents.push(<Element color='#A66321' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+            allEvents.push(<Element color='#A66321' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
             break;
             case 'school':
-            allEvents.push(<Element color='#6B291A' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+            allEvents.push(<Element color='#6B291A' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
             break;     
           default:
-            allEvents.push(<Element key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+            allEvents.push(<Element key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
             break;
         }
       return true;
@@ -63,42 +65,42 @@ class CV extends Component {
 
     sort = (characteristic, menu) =>{
       let allEvents = [];
-      Object.keys(data).map((item, key)=>{
-        for (let i = 0; i < data[item].characteristic.length; i++) {
-          if (data[item].characteristic[i] === characteristic) {
-            switch (data[item].characteristic[menu]) {
+      Object.keys(timeline).map((item, key)=>{
+        for (let i = 0; i < timeline[item].characteristic.length; i++) {
+          if (timeline[item].characteristic[i] === characteristic) {
+            switch (timeline[item].characteristic[menu]) {
               case 'education':
-                allEvents.push(<Element color='#6B291A' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+                allEvents.push(<Element color='#6B291A' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
                 break;
                 case 'hobbies':
-                allEvents.push(<Element color='#008075' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+                allEvents.push(<Element color='#008075' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
                 break;
                 case 'life':
-                allEvents.push(<Element color='#0E5A8A' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+                allEvents.push(<Element color='#0E5A8A' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
                 break;
                 case 'work':
-                allEvents.push(<Element color='#A66321' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+                allEvents.push(<Element color='#A66321' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
                 break;  
                 case 'athletics':
-                allEvents.push(<Element color='#008075' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+                allEvents.push(<Element color='#008075' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
                 break;
                 case 'creative':
-                allEvents.push(<Element color='#008075' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+                allEvents.push(<Element color='#008075' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
                 break;  
                 case 'it':
-                allEvents.push(<Element color='#A66321' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+                allEvents.push(<Element color='#A66321' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
                 break;   
                 case 'other':
-                allEvents.push(<Element color='#A66321' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+                allEvents.push(<Element color='#A66321' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
                 break;
                 case 'higher':
-                allEvents.push(<Element color='#6B291A' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+                allEvents.push(<Element color='#6B291A' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
                 break;
                 case 'school':
-                allEvents.push(<Element color='#6B291A' key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+                allEvents.push(<Element color='#6B291A' key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
                 break;     
               default:
-                allEvents.push(<Element key={key} characteristic={data[item].characteristic} year={data[item].year} title={data[item].title} desc={data[item].description}/>)
+                allEvents.push(<Element key={key} characteristic={timeline[item].characteristic} year={timeline[item].year} title={timeline[item].title} desc={timeline[item].description}/>)
                 break;
             }
             
@@ -113,15 +115,19 @@ class CV extends Component {
       console.log('Sorting Cards...');
       
     } 
-
-    takeData = () =>{
+    displayCV = () =>{
+      this.setState({
+        cards: <CVlayout/>
+      })
+    }
+    taketimeline = () =>{
       console.log(this.state.cards);
     }
 
     render() {
       return (
         <div>
-          <h5>{this.state.myData}</h5>
+          <h5>{this.state.mytimeline}</h5>
           <MediaQuery minWidth={768}>
             <ButtonGroup style={{marginTop: '20px'}}>
               <Button active icon="sort" rightIcon="caret-right" text="Sort by:" />
@@ -159,7 +165,7 @@ class CV extends Component {
                 <Button intent={Intent.SUCCESS}  icon="caret-down"/>
               </Popover>
               
-              <Button onClick={this.takeData} text='DevButton' />
+              <Button onClick={this.taketimeline} text='CV'  onClick={this.displayCV}/>
             </ButtonGroup>
             <Card  className="cvCardContainer" interactive={false} elevation={Elevation.ONE}>
               {this.state.cards}
@@ -178,8 +184,7 @@ class CV extends Component {
                   <MenuItem onClick={()=> this.sort('school', 1)} intent={Intent.DANGER} text={'School'} icon='edit' />
                   <MenuDivider />
                   <MenuItem onClick={()=> this.sort('higher', 1)} intent={Intent.DANGER} text={'Higher Education'} icon='book' />
-                </Menu> 
-              }>
+                </Menu> }>
               <Button intent={Intent.DANGER}  icon="caret-down"/>
               </Popover>
               <Button intent={Intent.PRIMARY} onClick={() => this.sort('life', 0)} icon="pulse" />
@@ -205,7 +210,7 @@ class CV extends Component {
                 <Button intent={Intent.SUCCESS}  icon="caret-down"/>
               </Popover>
               
-              <Button onClick={this.takeData} icon='code' />
+              <Button onClick={this.taketimeline} icon='code' />
             </ButtonGroup>
             <Card  className="cvCardContainer" interactive={false} elevation={Elevation.ONE}>
               {this.state.cards}

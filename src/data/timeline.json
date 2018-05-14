@@ -4,52 +4,58 @@
         "year": "2017 - Today",
         "title": "Store Manager @Trapped Escape Rooms Chalandri",
         "description": "Store Manager, Systems Maintenance, Head GM",
-        "characteristic": ["work", "other"]
+        "long_description": "",
+        "characteristic": ["work", "other", "cv", "job"]
 
         
     },
     "e20":{
         
-        "year": "2017",
-        "title": "Paper Published @Operational Planning, Technological Innovations and Mathematical Applications (OPTIMA)",
-        "description": "Paper title: 'Consensus-based data fusion in military IoT / multi agent system paradigm'",
-        "characteristic": ["education", "higher"]
+        "year": "May 26 2017",
+        "title": "Paper title: 'Consensus-based data fusion in military IoT / multi agent system paradigm'",
+        "description": "Paper Published @Operational Planning, Technological Innovations and Mathematical Applications (OPTIMA)",
+        "long_description": "",
+        "characteristic": ["education", "higher", "cv", "publications"]
 
         
     },
     "e19":{
         
-        "year": "2016",
+        "year": "Oct 2016 - Oct 2017",
         "title": "Lecturer - Researcher @IST College",
         "description": "Lectured many modules, most of them were on Computer Science, Web Development and Prject Management",
-        "characteristic": ["work", "it"]
+        "long_description": "Introduction in Computers (level 4) / Practical Project II with HTML5/CSS3 Javascript(jQuery) (level 4) / Practical Project IV with HTML5/CSS3 Javascript(jQuery), mySQL, PHP, Apache (level 5) / Algorithms I (Stack, Queue, problem solving) / Programming V (Client-Server) using nodeJS, expressJS, mongoDB and templating/server-side rendering using EJS. (level 5)",
+        "characteristic": ["work", "it", "cv", "job"]
 
         
     },
     "e18":{
         
-        "year": "2016",
+        "year": "Jan 2016 - Apr 2016",
         "title": "Web Developer / Technology Consultant @Associates in Business",
         "description": "In charge of the front/back-end actualization of the company's web site, as well as the consultation of senior management about technological upgrades of the company.",
-        "characteristic": ["work", "it"]
+        "long_description": "In charge of the front/back-end actualization of the company's web site, as well as the consultation of senior management about technological upgrades of the company.",
+        "characteristic": ["work", "it", "cv", "job"]
 
         
     },
     "e17":{
         
-        "year": "2015",
-        "title": "Networks and Systems Engineer / Infrastracture Assistant Administrator",
-        "description": "@Hellenic Armed Forces, Ministry of Defence, KEPYES",
-        "characteristic": ["work", "it"]
+        "year": "Jan 2015 - Oct 2015",
+        "title": "Networks and Systems Engineer / Infrastracture Assistant Administrator @KEPYES",
+        "description": "Hellenic Armed Forces, Ministry of Defence, KEPYES",
+        "long_description": "Administration and maintenance of the Hellenic Army General Staff (HAGS) local area network. / Control, maintenance and support of the network's main servers, routers/switches and backup systems. / Administration and maintenance of technological solutions for the security augmentation of the Hellenic Army's classified Network . / Control and monitoring of network operations and infrastructure of the HAGS network. / Installation, support and repair of the IT systems of the HAGS, as well as the installation and configuration of endpoint users' PC. / Technical support for LAN endpoint users. / Technical Support for the Information Systems of the Operations Headquarters of the Hellenic Army. / Configuration and modification of Windows Server. / The Training of new Personnel in all of the above.",
+        "characteristic": ["work", "it", "cv", "job"]
 
         
     },
     "e16":{
         
-        "year": "2013",
-        "title": "Paper Published @World Scientific and Engineering Academy and Society (WSEAS) 17th International Multiconference on Circuits, Systems, Communications and Computers, 2013 (17th CSCC)",
-        "description": "Paper title: 'Cooperative sensing in distributed military environment using smart devices'",
-        "characteristic": ["education", "higher"]
+        "year": "Jul 18 2013",
+        "title": "Paper title: 'Cooperative sensing in distributed military environment using smart devices'",
+        "description": "Paper Published @World Scientific and Engineering Academy and Society (WSEAS) 17th International Multiconference on Circuits, Systems, Communications and Computers, 2013 (17th CSCC)",
+        "long_description": "",
+        "characteristic": ["education", "higher", "cv", "publications"]
 
         
     },
@@ -58,16 +64,18 @@
         "year": "2012 - 2014",
         "title": "University of Hertfordshire / Master of Science (M.Sc.), Mobile Computing, Distinction",
         "description": "Thesis title: 'Distributed control and administration of mobile agents in an ad hoc networking environment.'",
-        "characteristic": ["education", "higher"]
+        "long_description": "",
+        "characteristic": ["education", "higher", "cv", "edu"]
 
         
     },
     "e14":{
         
-        "year": "2009",
+        "year": "Jan 2009 - Feb 2009",
         "title": "Web Developer/Designer @Endoscopic Center of Athens",
         "description": "Web Design / Development of www.endoskopiko.gr (now offline)",
-        "characteristic": ["work", "it"]
+        "long_description": "One of my first jobs as a web developer. Deisgned and implemented the company's website.",
+        "characteristic": ["work", "it", "cv", "job"]
 
         
     },
@@ -76,16 +84,18 @@
         "year": "2008 - 2012",
         "title": "University of Hertfordshire / Bachelor of Science (B.Sc.)), Information Technology (Business Systems Specialist), Honours",
         "description": "Final project Title: 'A Prototype Software attempt to produce a S.W.O.T analysis from Porter's Five Force Model.'",
-        "characteristic": ["education", "higher"]
+        "long_description": "",
+        "characteristic": ["education", "higher", "cv", "edu"]
 
         
     },
     "e12":{
         
-        "year": "2007",
+        "year": "2007 - 2008",
         "title": "IT Specialist / Cashier @Virus NetCafe",
         "description": "A Job to remember! Made good friends, met new people, learned a lot!",
-        "characteristic": ["work", "it"]
+        "long_description": "In charge of the store's systems. Cashier.",
+        "characteristic": ["work", "it", "cv", "job"]
 
         
     },
@@ -94,6 +104,7 @@
         "year": "2005",
         "title": "High School @Eniaio Lykeion Palaiou Psychikou",
         "description": "Well! High School! Full of good and poor choices! A time to remember!",
+        "long_description": "",
         "characteristic": ["education", "school"]
 
         
@@ -103,6 +114,7 @@
         "year": "2004",
         "title": "1st Job!!! DJ @Αχαιοί Bar Cafe ",
         "description": "This was my first job! I was very excited making my own money for the first time in my life! :D",
+        "long_description": "",
         "characteristic": ["work", "other"]
 
         
@@ -112,6 +124,7 @@
         "year": "2002",
         "title": "Athletics / Long Jump ",
         "description": "I was trasining for 4 years won some medals almost made it to the Panhellenic Championship but then.. I took an arrow in the knee.",
+        "long_description": "",
         "characteristic": ["hobbies", "athletics"]
 
         
@@ -121,6 +134,7 @@
         "year": "2001",
         "title": "Lead of school's Voleyball Team",
         "description": "I was the leader of our school's volleyball team. We played in several school championships.",
+        "long_description": "",
         "characteristic": ["hobbies", "athletics"]
 
     },
@@ -129,6 +143,7 @@
         "year": "2001",
         "title": "Middle School @Ionios School",
         "description": "Did my middle school years at Ionios School. Ionios is a very strict school, not for a kid like me.",
+        "long_description": "",
         "characteristic": ["education", "school"]
 
     },
@@ -137,6 +152,7 @@
         "year": "2000",
         "title": "Tennis",
         "description": "Started learning to play tennis. I did lessons for about ~4 years.",
+        "long_description": "",
         "characteristic": ["hobbies", "athletics"]
 
         
@@ -147,6 +163,7 @@
         "year": "1998",
         "title": "Chess School",
         "description": "Yea had to learn chess as well. Was a nice brain-teasing experience.",
+        "long_description": "",
         "characteristic": ["hobbies", "creative"]
 
         
@@ -156,6 +173,7 @@
         "year": "1995",
         "title": "Primary School @LFH",
         "description": "Same School! Just add the word 'primary' in front of school! :)",
+        "long_description": "",
         "characteristic": ["education", "school"]
 
         
@@ -165,6 +183,7 @@
         "year": "1994",
         "title": "Piano Studies (1994 ~ 2014)",
         "description": "When I was 5 years old, I started playing the Piano. For about 20 years I continued my studies on music up until the point I decided that music will not be my long term career goal.",
+        "long_description": "",
         "characteristic": ["hobbies", "creative"]
 
         
@@ -174,6 +193,7 @@
         "year": "1994",
         "title": "Kindergarden LFH",
         "description": "Started my awsome journey at the Lycée Franco-Hellénique (LFH) now known as 'Lycée Franco-Hellénique Eugène Delacroix' at Agia Paraskevi.",
+        "long_description": "",
         "characteristic": ["education", "school"]
 
         
@@ -183,6 +203,7 @@
         "year": "1993",
         "title": "Preprep School",
         "description": "Started prepep schoolat a nice place which I do not remember the name. :P",
+        "long_description": "",
         "characteristic": ["education", "school"]
 
         
@@ -192,6 +213,7 @@
         "year": "1989",
         "title": "Born",
         "description": "Describe what? Yea TADA I was born in Marousi, Athens, Attica, Greece!",
+        "long_description": "",
         "characteristic": ["life"]
 
         

@@ -1,0 +1,57 @@
+{
+    "languages": {
+        "English":{
+            "level": "Professional and Academic working proficiency"
+        },
+        "French":{
+            "level": "Native Understanding"
+        },
+        "Greek":{
+            "level": "Native Speaker"
+        }
+    },
+    "activities":{
+        "2017":{
+            "title": "Crowdhackathon #insurance2 Prize Winners by Crowd Policy"
+        },
+        "2016":{
+            "title": "Founder and Leader of the IST Development Team"
+        },
+        "2012":{
+            "title": "Distinction Award. Master Thesis published"
+        }
+    },
+    "skills": [
+        "Lecturing",
+        "Mentoring", 
+        "Team Leader / Member", 
+        "Multidisciplinary practices", 
+        "Creative Thinking", 
+        "Flexible Thinker", 
+        "Fast Descision Making"
+    ],
+    "contact":{
+        "address": ["****** # Str", "Palaio Psychiko 154 52", "Athens, Greece"],
+        "phone": "693 #### #81",
+        "email": "kollan.alex@gmail.com",
+        "facebook": "fb.me/Alex.Duelstein.Collin",
+        "linkedin": "linkedin.com/in/alexkollan",
+        "github": "github.com/alexkollan",
+        "codepen": "codepen.io/duelstein",
+        "codesandbox": "codesanbox.io/u/alexkollan"
+    },
+    "awards":{
+        "1":{
+            "year": "Nov 2017",
+            "title": "Award Wining Insurance Tech Application @Crowdhackathon #insurance2",
+            "description": "We are the MakeItHappen team, and this is 'SURE', a Multidimensional Platform for Cost analysis, Underwriting, Instant Health insurance contract, as well as an A-I-O Solution. Github: https://github.com/crowdhackathon-insurance2/MakeItHappen"
+        },
+        "0":{
+            "year": "Jun 2014",
+            "title": "Distinction Award M.Sc.",
+            "description": "Award title by the University of Hertfordshire on my Master's Degree."
+
+        }
+    }
+
+}

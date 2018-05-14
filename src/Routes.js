@@ -5,6 +5,8 @@ import CV from './Components/Body/CV/CV';
 import Portfolio from './Components/Body/Portfolio/Portfolio';
 import Stuff from './Components/Body/Stuff/Stuff';
 import Contact from './Components/Body/Contact/Contact';
+import Filter from './Components/tests/Filter'
+
 
 class Routes extends Component{
     render(){
@@ -24,6 +26,9 @@ class Routes extends Component{
               }}/>
               <Route path='/Contact' exact strict render={()=>{
                 return(<Contact/>)
+              }}/>
+              <Route path='/mou' exact strict render={()=>{
+                return(<Filter/>)
               }}/>
               </div>
         )
