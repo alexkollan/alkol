@@ -11,7 +11,7 @@ class Header extends Component {
     render() {
       return (
         <div>
-          <Navbar className="pt-dark">
+          <Navbar className="">
             <Title title={this.props.title}/>
             <Menu buttonClick={this.handleButtonClick}/>
           </Navbar>

@@ -31,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-      <div className="App pt-dark">
+      <div className="App">
 
         <Header  title='AlCol' pressedButton={this.selectedRoute}/>
         <Routes/>

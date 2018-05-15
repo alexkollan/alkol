@@ -1,4 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {Navbar, Button, Card, InputGroup, Collapse, Menu, MenuItem, MenuDivider, Tag, Intent, TagInput} from '@blueprintjs/core';
+import CriteriaBox from './CriteriaBox';
+
 
 
 const type_data = [
@@ -210,11 +213,75 @@ const availableGroups = [
             {attribute_id: 1,attribute_values: [3]},
             {attribute_id: 3, attribute_values: [15]},
             {attribute_id: 27,attribute_values: [217]}]}
-]
+];
+
+
+
+
 class Filter extends Component{
+  constructor(props){
+    super(props);
+    this.state={
+      isOpen: false,
+      tagNames: [],
+      tagIds: [],
+      allTags: [],
+      filteredResults: []
+    }
+  }
+  componentWillMount(){
+    let obj = {a: 1, b:2, c:3, d:4, e:5};
+    let arr = ['i','ii','iii','iv','v'];
+
+    for(let i in obj){
+      // console.log(obj[i]);
+    }
+
+  }  
+  updateTags = (tags) =>{
+    console.log("updating!");
+    // console.log(tags);
+    
+    this.setState({
+      allTags: [...this.state.allTags, tags[tags.length -1]]
+    },()=>{
+      console.log(`State UPDATED to: `,this.state.allTags);
+    })
+  }
+  removeTags = (tag) =>{
+    // console.log(tag);
+    for(let item in this.state.allTags){
+      let index = this.state.allTags[item].indexOf(tag);
+      if(index > -1){
+        this.setState((prevState)=>{
+          prevState.allTags.splice(item, 1);
+          // prevState.tagNames.splice(this.state.tagNames.indexOf(tagName), 1);
+          return{
+            allTags: [...prevState.allTags]
+            // tagNames: [...prevState.tagNames]
+          }
+        },()=>console.log(`New master state: `,this.state.allTags))
+        // this.props.removeTags(this.state.tags[item])
+      }
+    }
+  }
+
   render(){
     return(
-      <div>HI!! hihihi</div>
+      <div style={{display:'flex'}}>
+        <div>
+          <CriteriaBox takeTags={this.updateTags} removeTags={this.removeTags} name="Types" items={type_data}/>
+          <CriteriaBox takeTags={this.updateTags} removeTags={this.removeTags} name="Category" items={categories_data}/>
+          <CriteriaBox takeTags={this.updateTags} removeTags={this.removeTags} name="Gender" items={gender_data}/>
+          <CriteriaBox takeTags={this.updateTags} removeTags={this.removeTags} name="Season" items={season_data}/>
+          <CriteriaBox takeTags={this.updateTags} removeTags={this.removeTags} name="Quality" items={quality_data}/>
+          </div>
+        <div style={{marginLeft:'100px'}}>
+          All selected filters: {this.state.allTags.map((item,key)=>{
+                                  return <h5 key={key}>{this.state.allTags[key][1]}</h5>
+                                })}
+        </div>
+      </div>
     )
   }
 }
