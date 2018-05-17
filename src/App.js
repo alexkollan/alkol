@@ -33,7 +33,7 @@ class App extends Component {
       <Router>
       <div className="App">
 
-        <Header  title='AlCol' pressedButton={this.selectedRoute}/>
+        <Header  title='AlKol' pressedButton={this.selectedRoute}/>
         <Routes/>
         <Footer/>
       </div>

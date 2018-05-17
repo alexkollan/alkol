@@ -9,6 +9,7 @@ body {
   /* background-color: #182026; */
   background: #ddd5ca;
   margin-bottom: -10px !important;
+
 }
 .nav {
   background: #ac987b;
@@ -24,7 +25,23 @@ body {
 .scrollBtn {
   font-size: 2em;
 }
+.cardContainer {
+  display: flex;
 
+}
+
+.cardHolder {
+  margin: 10px;
+  width: 100%;
+
+}
+
+.card {
+  /* padding-top: 10%; */
+  /* min-height: 200px; */
+  /* max-height: inherit; */
+  height: 300px;
+}
 .homeIcons {
   font-size: 15vh;
   color: rgb(231, 225, 216);
@@ -73,7 +90,12 @@ body {
 }
 .cvCard {
   margin-bottom: 5px;
+ 
 
+}
+.navMenuMinfied{
+  background: #AC987B;
+  border-radius: 0px;
 }
 .cvCard div h4{
   color: #DDD5CA !important;
@@ -101,6 +123,7 @@ body {
   /* width: 50vw; */
   font-size: 1.3em;
   background: rgba(0, 255, 0, 0);
+  color: rgb(231, 225, 216);
 }
 
 .footMenuItem {
@@ -126,11 +149,17 @@ h4 {
   /* display: flex; */
   background: #77654a;
   padding: 10px !important;
+  width: 100%;
+  /* position:fixed; */
+  bottom:0;
+  /* height: 100px; */
+  margin-top: 10px;
 }
 
 .footer-menu {
   max-width: 300px;
   background: black;
+  
 }
 .footerMenuItem {
   color: white !important;
@@ -138,22 +167,9 @@ h4 {
 i code {
   background: rgb(146, 126, 97) !important;
   color: rgba(255, 255, 255, 0.842) !important;
-}
-.cardContainer {
-  display: flex;
+  line-height: 10px;
 }
 
-.cardHolder {
-  margin: 10px;
-  width: 100%;
-  /* height: 28vh; */
-}
-
-.card {
-  padding-top: -20px;
-  min-height: 200px;
-  max-height: 30vh;
-}
 
 .cardTop {
   height: 30vh;
@@ -163,7 +179,7 @@ i code {
 }
 
 .homeContainer {
-  /* height: 100vh; */
+  height: 82vh;
 }
 
 .topContainer {
@@ -362,9 +378,33 @@ i code {
   padding: 0px 0px 10px 0px;
 }
 
+.portfolioMenu{
+  width: 18vw;
+  background: #DDD5CA; 
+  color: #77654A;
+  font-weight: 500;
+  float: left;
+  position: relative;
+  margin-top: 200px;
+}
+.portfolioContent{
+  /* height: 70vh; */
+  width: 75vw;
+  /* min-width: 500px; */
+  margin: 50px 20vw;
+  padding: 0px;
+  /* box-shadow: 0px 0px 15px 1px rgba(70, 44, 6, 0.836); */
+  border-radius: 10px;
+}
+.portfolioImg{
+  width: inherit;
+  /* height: inherit; */
+  border-radius: inherit;
+}
+
 @media only screen and (max-width: 1500px) {
   body {
-    background-color: rgba(47, 0, 51, 0.856);
+    /* background-color: rgba(47, 0, 51, 0.856); */
   }
   .rightPanelTopContainer {
     flex-direction: row;
@@ -387,7 +427,7 @@ i code {
 
 @media only screen and (max-width: 1200px) {
   body {
-    background-color: red;
+    /* background-color: red; */
   }
   .cvCard {
     margin-bottom: 5px;
@@ -407,15 +447,45 @@ i code {
     margin: 10px;
     width: 100%;
   }
+  .portfolioMenu{
+    float: none;
+    margin-top: 0px;
+    width: 100%;
+    display: flex !important;
+   justify-content: center;
+   flex-flow: row wrap;
+  }
+  .portfolioMenu button:hover{
+    background: rgba(179, 176, 152, 0.24) !important;
+  }
+  .portfolioMenu button{
+    min-width: 150px;
+  }
+  .portfolioMenu div{
+    /* background: #DDD5CA !important; */
+    margin-top: 5px;
+    height: 20px;
+  }
+  .portfolioContent{
+    /* height: 70vh; */
+    /* width: 75vw; */
+    width: 100%;
+    /* box-shadow: 0px 0px 15px 1px rgba(70, 44, 6, 0.836); */
+    /* border-radius: 10px; */
+    margin: 50px 0vw;
+  }
 }
 
 @media only screen and (max-width: 979px) {
   body {
-    background-color: blue;
+    /* background-color: blue; */
   }
   .rightPanelTopContainer {
     flex-direction: column;
     /* visibility: hidden; */
+  }
+  .homeContainer {
+    height: 100vh;
   }
   .work {
     width: 100%;
@@ -464,7 +534,10 @@ i code {
 
 @media only screen and (max-width: 767px) {
   body {
-    background-color: green;
+    /* background-color: green; */
+  }
+  .homeContainer {
+    height: inherit;
   }
   .topContainer {
     display: flex;
@@ -540,7 +613,7 @@ i code {
 
 @media only screen and (max-width: 480px) {
   body {
-    background-color: yellow;
+    /* background-color: yellow; */
     overflow-y: scroll;
     overflow-x: hidden;
   }

@@ -42,7 +42,7 @@ class Footer extends Component{
               <Button className="footerMenuItem" minimal type='button' onClick={() => this.goTo('lol')} text={<div className="footMenuItem"><i className="fa fa-code footerMenuItem" aria-hidden="true"></i> This Site :O</div>}></Button>
             </ButtonGroup>
             
-            <h5><i><code>{'<Made with '}<i className="devicon-react-original"></i>{'ReactJS and '}{'@Blueprintjs '}{'using '}<i className="devicon-visualstudio-plain"></i>{' VScode />'}</code></i></h5>
+            <h5><i><code>{'<Made with '}<a style={{textDecoration:'none', color:'inherit'}} href="https://reactjs.org/" target="_blank"><i className="devicon-react-original"></i>ReactJS</a>  and <a style={{textDecoration:'none', color:'inherit'}} href="http://blueprintjs.com/">@Blueprintjs</a>{' using '}<a style={{textDecoration:'none', color:'inherit'}} href="https://code.visualstudio.com/" target="_blank"><i className="devicon-visualstudio-plain"></i>{'VScode />'}</a></code></i></h5>
             <h5><i><code>{'<by Alex Kollan © 2018 />'}</code></i></h5>
           </MediaQuery>
           <MediaQuery maxWidth={767}>
@@ -59,7 +59,7 @@ class Footer extends Component{
               <MenuDivider />
             <MenuItem className="footerMenuItem" onClick={() => this.goTo('lol')} className="footMenuItem" text={<div className="footMenuItem" style={{textAlign: 'center'}}><i className="fa fa-code footerMenuItem" aria-hidden="true"></i> This Site :O</div>} />
           </Menu>
-            <h5 className="footerText"><i><code >{'< Made with '}<i className="devicon-react-original"></i>{'ReactJS and '}{'@Blueprintjs '}{'using '}<i className="devicon-visualstudio-plain"></i>{' VScode,'}</code></i></h5>
+            <h5 className="footerText"><i><code >{'< Made with '}<a style={{textDecoration:'none', color:'inherit'}} href="https://reactjs.org/" target="_blank"><i className="devicon-react-original"></i>ReactJS </a> and <a style={{textDecoration:'none', color:'inherit'}} href="http://blueprintjs.com/">@Blueprintjs</a>{' using '}<a style={{textDecoration:'none', color:'inherit'}} href="https://code.visualstudio.com/" target="_blank"><i className="devicon-visualstudio-plain"></i> VScode</a></code></i></h5>
             <h5 className="footerText"><i><code >{'by Alex Kollan © 2018 />'}</code></i></h5>
           </MediaQuery>
         </div>

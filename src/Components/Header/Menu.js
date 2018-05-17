@@ -10,33 +10,33 @@ class Menu extends Component {
 
         <MediaQuery maxWidth={767}>
             <NavbarGroup align='right'>
-            <Popover
+            <Popover minimal
                 content={
-                  <Menus>
+                  <Menus className="navMenuMinfied">
                     <Link to="/" style={{ textDecoration: 'none', color: 'rgba(255,255,255,0.3)' }}>
-                      <MenuItem onClick={() => this.props.buttonClick('/')} className="pt-minimal topMenuItem" icon="home" text="Home" />
+                      <MenuItem onClick={() => this.props.buttonClick('/')} className="pt-minimal topMenuItem" icon={<Icon icon="home" color="white"/>} text="Home" />
                     </Link>
                     <MenuDivider style={{borderColor:'rgba(255,255,255,0.3)'}} />
                     <Link to="/CV" style={{ textDecoration: 'none', color: 'rgba(255,255,255,0.3)' }}>
-                      <MenuItem onClick={() => this.props.buttonClick('/cv')} className="pt-minimal topMenuItem" icon="id-number" text="CV" />
+                      <MenuItem onClick={() => this.props.buttonClick('/cv')} className="pt-minimal topMenuItem" icon={<Icon icon="id-number" color="white"/>} text="CV" />
                     </Link>
                     <MenuDivider style={{borderColor:'rgba(255,255,255,0.3)'}} />
                     <Link to="/Portfolio" style={{ textDecoration: 'none', color: 'rgba(255,255,255,0.3)' }}>
-                      <MenuItem onClick={() => this.props.buttonClick('/portfolio')} className="pt-minimal topMenuItem" icon="briefcase" text="Portfolio" />
+                      <MenuItem onClick={() => this.props.buttonClick('/portfolio')} className="pt-minimal topMenuItem" icon={<Icon icon="briefcase" color="white"/>} text="Portfolio" />
                     </Link>
-                    <MenuDivider style={{borderColor:'rgba(255,255,255,0.3)'}} />
+                    {/*<MenuDivider style={{borderColor:'rgba(255,255,255,0.3)'}} />
                     <Link to="/Stuff" style={{ textDecoration: 'none', color: 'rgba(255,255,255,0.3)' }}>
-                      <MenuItem onClick={() => this.props.buttonClick('/stuff')} className="pt-minimal topMenuItem" icon="lightbulb" text="Stuff" />
+                      <MenuItem onClick={() => this.props.buttonClick('/stuff')} className="pt-minimal topMenuItem" icon={<Icon icon="lightbulb" color="white"/>} text="Stuff" />
                     </Link>
                     <MenuDivider style={{borderColor:'rgba(255,255,255,0.3)'}} />
                     <Link to="/Contact" style={{ textDecoration: 'none', color: 'rgba(255,255,255,0.3)' }}>
-                      <MenuItem href="/Contact" onClick={() => this.props.buttonClick('/contact')} className="pt-minimal topMenuItem" icon="chat" text="Contact" />
-                    </Link>
+                      <MenuItem href="/Contact" onClick={() => this.props.buttonClick('/contact')} className="pt-minimal topMenuItem" icon={<Icon icon="chat" color="white"/>} text="Contact" />
+                </Link>*/}
                   </Menus>
                 }
                 position={Position.BOTTOM_RIGHT}
             >
-              <Button style={{width:'40px', height:'40px'}} onClick={() => this.props.buttonClick('/contact')}  icon="menu"/>
+              <Button style={{width:'40px', height:'40px', background:'#AC987B', boxShadow:'none'}} onClick={() => this.props.buttonClick('/contact')}  icon={<Icon icon="menu" iconSize={28} color="white"/>}/>
             </Popover>
             </NavbarGroup>
         </MediaQuery>
@@ -54,14 +54,14 @@ class Menu extends Component {
             <Link to="/Portfolio" style={{ textDecoration: 'none',borderColor:'rgba(255,255,255,0.3)'}}>
               <Button  onClick={() => this.props.buttonClick('/portfolio')} className="pt-minimal topMenuItem" icon={<Icon icon="briefcase" color="white"/>} text="Portfolio" />
             </Link>
-            <NavbarDivider style={{borderColor:'rgba(255,255,255,0.3)'}} />
+            {/* <NavbarDivider style={{borderColor:'rgba(255,255,255,0.3)'}} />
             <Link to="/Stuff" style={{ textDecoration: 'none', color: 'rgba(255,255,255,0.3)' }}>
               <Button onClick={() => this.props.buttonClick('/stuff')} className="pt-minimal topMenuItem" icon={<Icon icon="lightbulb" color="white"/>} text="Stuff" />
             </Link>
             <NavbarDivider style={{borderColor:'rgba(255,255,255,0.3)'}} />
             <Link to="/Contact" style={{ textDecoration: 'none', color: 'rgba(255,255,255,0.3)' }}>
               <Button href="/Contact" onClick={() => this.props.buttonClick('/contact')} className="pt-minimal topMenuItem" icon={<Icon icon="chat" color="white"/>} text="Contact" />
-            </Link>
+            </Link> */}
           </NavbarGroup>
         </MediaQuery>
       </div>

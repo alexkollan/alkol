@@ -25,7 +25,7 @@ class Cards extends Component {
               </Card>
             </Link>
           </div>
-          <div className="cardContainer">
+          {/* <div className="cardContainer">
             <Link className="cardHolder" to="/Stuff" style={{ textDecoration: 'none', color: 'white' }}>
               <Card style={{ backgroundColor: '#4B8178'}} className="card" interactive={true} elevation={Elevation.ONE}>              
                 <h3>You can check some</h3> <h1><code>{stuff}</code></h1>
@@ -38,7 +38,7 @@ class Cards extends Component {
                 <i className="fa fa-envelope homeIcons"></i>          
               </Card>
             </Link>
-          </div>
+          </div> */}
         </div>
       );
     }
