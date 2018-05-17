@@ -24,17 +24,21 @@ class CriteriaBox extends Component{
         return {isOpen: !prevState.isOpen}
       })
     }
-    selectItem = (id, description) =>{
+    selectItem = (id, description, criteriaId) =>{
       this.setState({
-        tags: [...this.state.tags, [id,description]],
+        tags: [...this.state.tags, id],
         tagNames: [...this.state.tagNames, description]
 
-      },()=>this.props.takeTags(this.state.tags))
+      },()=>{
+        this.props.takeTags(this.state.tags, criteriaId)
+        console.log(criteriaId);
+      })
     }
     
     removeTag = (tagName) =>{
+
       for(let item in this.state.tags){
-        let index = this.state.tags[item].indexOf(tagName);
+        let index = this.state.tagNames[item].indexOf(tagName);
         if(index > -1){
           this.setState((prevState)=>{
             prevState.tags.splice(item, 1);
@@ -43,8 +47,13 @@ class CriteriaBox extends Component{
               tags: [...prevState.tags],
               tagNames: [...prevState.tagNames]
             }
+          },()=>{
+            // console.log(this.state.tags);
+            this.props.removeTags(this.state.tags, this.props.critId)
           })
-          this.props.removeTags(tagName)
+          
+          
+          
         }
       }
     }
@@ -61,7 +70,7 @@ class CriteriaBox extends Component{
                 {this.props.items.map((item, key)=>{
                   // console.log(obj.value_description);
                   // console.log(obj.value_id);
-                  return <MenuItem key={key} onClick={()=>this.selectItem(this.props.items[key].value_id, this.props.items[key].value_description)} text={this.props.items[key].value_description}/>;
+                  return <MenuItem key={key} onClick={()=>this.selectItem(this.props.items[key].value_id, this.props.items[key].value_description, this.props.critId)} text={this.props.items[key].value_description}/>;
                 })}
               </Menu>
             </Collapse>

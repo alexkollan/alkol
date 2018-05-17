@@ -15,6 +15,24 @@ let skills = data.skills;
 let language = data.languages;
 let awardItems = data.awards;
 
+
+Object.keys(timeline).map((item, key)=>{
+      
+  let tag = timeline[item].characteristic;
+  if(tag[2] ==="cv"){
+    if (tag[3] === "job") {
+      if (tag[1] === "it") {
+        jobItems.push(timeline[item]);
+      }
+    }
+  else if(tag[3] === "publications"){
+    pubItems.push(timeline[item]);
+  }else if(tag[3] === "edu"){
+    eduItems.push(timeline[item]);
+  }
+}})
+
+
 class RightPanel extends Component{
   constructor(props){
     super(props);
@@ -26,21 +44,7 @@ class RightPanel extends Component{
   componentWillMount(){
     console.log(awardItems);
 
-    Object.keys(timeline).map((item, key)=>{
-      
-        let tag = timeline[item].characteristic;
-        if(tag[2] ==="cv"){
-          if (tag[3] === "job") {
-            if (tag[1] === "it") {
-              jobItems.push(timeline[item]);
-            }
-          }
-        else if(tag[3] === "publications"){
-          pubItems.push(timeline[item]);
-        }else if(tag[3] === "edu"){
-          eduItems.push(timeline[item]);
-        }
-    }})
+
   // console.log(jobItems);
   }
 
@@ -61,6 +65,7 @@ class RightPanel extends Component{
             </div>
           
             <div className="work">
+            <div className="sectionTitle">Work</div>
               {jobItems.map((item, key)=>{
                 return(
                   <CVmainelement key={key} year={jobItems[key].year} title={jobItems[key].title} description={jobItems[key].long_description}/>
@@ -68,18 +73,21 @@ class RightPanel extends Component{
               })}
             </div>
             <div className="publications">
+            <div className="sectionTitle">Publications</div>
               {pubItems.map((item, key)=>{
 
                 return <CVmainelement key={key} year={pubItems[key].year} title={pubItems[key].title} description={pubItems[key].description}/>
               })}
             </div>
             <div className="education">
+            <div className="sectionTitle">Education</div>
               {eduItems.map((item, key)=>{
 
                 return <CVmainelement key={key} year={eduItems[key].year} title={eduItems[key].title} description={eduItems[key].description}/>
               })}
             </div>
             <div className="awards">
+            <div className="sectionTitle">Most Relevant Awards</div>
             {Object.keys(awardItems).map((item, key)=>{
                 console.log(item);
                 return <CVmainelement key={key} year={awardItems[item].year} title={awardItems[item].title} description={awardItems[item].description}/>

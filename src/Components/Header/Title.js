@@ -4,7 +4,7 @@ import {NavbarGroup, NavbarHeading} from '@blueprintjs/core';
 const Title = (props) => {
     return(
         <NavbarGroup  align='left'>
-            <NavbarHeading >{props.title}</NavbarHeading>
+            <NavbarHeading style={{color:'white', fontWeight:'800'}}>{props.title}</NavbarHeading>
         </NavbarGroup>
     )
 }

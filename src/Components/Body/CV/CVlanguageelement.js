@@ -14,7 +14,7 @@ class CVlanguageelement extends Component{
   render(){
     return(
       <Card  className="languages" style={{marginBottom:'5px'}}>
-        <h4>&emsp;&nbsp;Languages</h4>
+        <h4 style={{color: "#E5E1DC"}}>&emsp;&nbsp;Languages</h4>
         <ul>
             {Object.keys(this.props.lang).map((lang, key)=>{
                 return <li key={key} style={{/*textAlign: 'center'*/}}>{Object.keys(this.props.lang)[key]}<br />Level: {this.props.lang[lang].level}</li>

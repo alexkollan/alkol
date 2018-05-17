@@ -5,45 +5,60 @@ import CriteriaBox from './CriteriaBox';
 
 
 const type_data = [
-    {value_id: 1 , value_description: 'Accessories'},
-    {value_id: 2 , value_description: 'Garment'},
-    {value_id: 3 , value_description: 'Houseware'},
-    {value_id: 4 , value_description: 'Shoes'}
+  {value_id: 175, value_description: 'Garment'},
+  {value_id: 191 , value_description: 'Nail Polish'},
+  {value_id: 193, value_description: 'Cologne'},
+  {value_id: 195, value_description: 'Gift Bags'},
+  {value_id: 347, value_description: 'Accessories'},
+  {value_id: 349 , value_description: 'Lim-Lom'},
+  {value_id: 351, value_description: 'Toys'},
+  {value_id: 353, value_description: 'Garbage'},
+  {value_id: 355, value_description: 'Recycling'},
+  {value_id: 369, value_description: 'Grading Mistakes'},
+  {value_id: 373, value_description: 'Original'},
+  {value_id: 387, value_description: 'Mix'},
+  {value_id: 409, value_description: 'Wipers'},
+  {value_id: 435, value_description: 'Jewelry'},
+  {value_id: 493, value_description: 'Household Rummage'},
+  {value_id: 375, value_description: 'Shoes'}
 ];
 
 const categories_data= [
-    {value_id: 5 , value_description: 'T-Shirts'},
-    {value_id: 6 , value_description: 'Dresses'},
-    {value_id: 7 , value_description: 'Pants'},
-    {value_id: 8 , value_description: 'Skirts'},
-    {value_id: 9 , value_description: 'Jackets'},
-    {value_id: 10 , value_description: 'Shirts'},
-    {value_id: 11 , value_description: 'Jeans'},
-    {value_id: 12 , value_description: 'Cardigans'}
+    {value_id: 21 , value_description: 'T-Shirts'},
+    {value_id: 249 , value_description: 'Dresses'},
+    {value_id: 289 , value_description: 'Pants'},
+    {value_id: 313 , value_description: 'Skirts'},
+    {value_id: 267 , value_description: 'Jackets'},
+    {value_id: 467 , value_description: 'Shirts'},
+    {value_id: 97 , value_description: 'Jeans'},
+    {value_id: 33 , value_description: 'Cardigan'}
 ];
 
 const gender_data = [
-    {value_id: 13 , value_description: 'Men'},
-    {value_id: 14 , value_description: 'Ladies'},
-    {value_id: 15 , value_description: 'Kids'},
-    {value_id: 16 , value_description: 'Adults'}
+    {value_id: 3 , value_description: 'Man'},
+    {value_id: 1 , value_description: 'Woman'},
+    {value_id: 223 , value_description: 'Children'},
+    {value_id: 383 , value_description: 'Adult'},
+    {value_id: 387 , value_description: 'Mix'}
 ];
 
 const season_data = [
-    {value_id: 17 , value_description: 'Winter'},
-    {value_id: 18 , value_description: 'Summer'},
-    {value_id: 19 , value_description: 'Mid Season'},
-    {value_id: 20 , value_description: 'All Season'},
-    {value_id: 21 , value_description: 'Mix'}
+    {value_id: 15 , value_description: 'Winter'},
+    {value_id: 17 , value_description: 'Summer'},
+    {value_id: 509 , value_description: 'Mid Season'},
+    {value_id: 19 , value_description: 'All Season'},
+    {value_id: 387 , value_description: 'Mix'}
 ];
 
 const quality_data = [
-    {value_id: 22 , value_description: 'Cream'},
-    {value_id: 23 , value_description: 'A1 Lux'},
-    {value_id: 24 , value_description: 'A export'},
-    {value_id: 25 , value_description: 'B export'},
+    {value_id: 217 , value_description: 'Cream'},
+    {value_id: 357 , value_description: 'A1 Lux'},
+    {value_id: 341 , value_description: 'A export'},
+    {value_id: 343 , value_description: 'B export'},
     {value_id: 26 , value_description: 'Wipers'},
-    {value_id: 27 , value_description: 'Standard'}
+    {value_id: 219 , value_description: 'Standard'},
+    {value_id: 461 , value_description: 'Rejected Suggested Cream'},
+    {value_id: 373 , value_description: 'Original'}
 ];
 
 
@@ -226,60 +241,143 @@ class Filter extends Component{
       tagNames: [],
       tagIds: [],
       allTags: [],
+      typeTags: [],
+      categoryTags:[],
+      genderTags: [],
+      seasonTags: [],
+      qualityTags: [],
       filteredResults: []
     }
   }
   componentWillMount(){
-    let obj = {a: 1, b:2, c:3, d:4, e:5};
-    let arr = ['i','ii','iii','iv','v'];
-
-    for(let i in obj){
-      // console.log(obj[i]);
-    }
+    this.setState({
+      filteredResults: availableGroups
+    },()=>{console.log(this.state.filteredResults);
+    })
 
   }  
-  updateTags = (tags) =>{
-    console.log("updating!");
+  updateTags = (tags, criteria) =>{
+    // console.log("updating!");
+    // console.log(tags, criteria);
+
+    switch (criteria) {
+      case 15:
+        this.setState({
+          typeTags: [...this.state.typeTags, tags[tags.length -1]]
+        },()=>{
+          console.log(`New types State : `,this.state.typeTags);
+        })
+      break;
+      case 5:
+        this.setState({
+          categoryTags: [...this.state.categoryTags, tags[tags.length -1]]
+        },()=>{
+          console.log(`New category State : `,this.state.categoryTags);
+        })
+      break;
+      case 1:
+        this.setState({
+          genderTags: [...this.state.genderTags, tags[tags.length -1]]
+        },()=>{
+          console.log(`New gender State : `,this.state.genderTags);
+        })
+      break;
+      case 3:
+        this.setState({
+          seasonTags: [...this.state.seasonTags, tags[tags.length -1]]
+        },()=>{
+          console.log(`New season State : `,this.state.seasonTags);
+        })
+      break;
+      case 27:
+        this.setState({
+          qualityTags: [...this.state.qualityTags, tags[tags.length -1]]
+        },()=>{
+          console.log(`New quality State : `,this.state.qualityTags);
+        })
+      break;
+    
+      default:
+        break;
+    }
+
     // console.log(tags);
     
-    this.setState({
-      allTags: [...this.state.allTags, tags[tags.length -1]]
-    },()=>{
-      console.log(`State UPDATED to: `,this.state.allTags);
-    })
+    // this.setState({
+    //   allTags: [...this.state.allTags, tags[tags.length -1]]
+    // },()=>{
+    //   console.log(`State UPDATED to: `,this.state.allTags);
+    // })
   }
-  removeTags = (tag) =>{
-    // console.log(tag);
-    for(let item in this.state.allTags){
-      let index = this.state.allTags[item].indexOf(tag);
-      if(index > -1){
-        this.setState((prevState)=>{
-          prevState.allTags.splice(item, 1);
-          // prevState.tagNames.splice(this.state.tagNames.indexOf(tagName), 1);
-          return{
-            allTags: [...prevState.allTags]
-            // tagNames: [...prevState.tagNames]
-          }
-        },()=>console.log(`New master state: `,this.state.allTags))
-        // this.props.removeTags(this.state.tags[item])
+  removeTags = (tags, criteria) =>{
+    switch (criteria) {
+      case 15:
+        this.setState({
+          typeTags: [...tags]
+        },()=>{
+          console.log(`New types State : `,this.state.typeTags);
+        })
+      break;
+      case 5:
+        this.setState({
+          categoryTags: [...tags]
+        },()=>{
+          console.log(`New category State : `,this.state.categoryTags);
+        })
+      break;
+      case 1:
+        this.setState({
+          genderTags: [...tags]
+        },()=>{
+          console.log(`New gender State : `,this.state.genderTags);
+        })
+      break;
+      case 3:
+        this.setState({
+          seasonTags: [...tags]
+        },()=>{
+          console.log(`New season State : `,this.state.seasonTags);
+        })
+      break;
+      case 27:
+        this.setState({
+          qualityTags: [...tags]
+        },()=>{
+          console.log(`New quality State : `,this.state.qualityTags);
+        })
+      break;
+    
+      default:
+        break;
+    }
+  }
+
+  filterData = () => {
+    // let result = availableGroups.filter((item)=>{
+    //   return 
+    // })
+    for(let item in availableGroups){
+      console.log(availableGroups[item].filterable_data);
+      for(let data in availableGroups[item].filterable_data){
+        console.log(availableGroups[item].filterable_data[data]);
       }
     }
+    console.log();
+    
   }
 
   render(){
     return(
       <div style={{display:'flex'}}>
         <div>
-          <CriteriaBox takeTags={this.updateTags} removeTags={this.removeTags} name="Types" items={type_data}/>
-          <CriteriaBox takeTags={this.updateTags} removeTags={this.removeTags} name="Category" items={categories_data}/>
-          <CriteriaBox takeTags={this.updateTags} removeTags={this.removeTags} name="Gender" items={gender_data}/>
-          <CriteriaBox takeTags={this.updateTags} removeTags={this.removeTags} name="Season" items={season_data}/>
-          <CriteriaBox takeTags={this.updateTags} removeTags={this.removeTags} name="Quality" items={quality_data}/>
+          <CriteriaBox critId={15} takeTags={this.updateTags} removeTags={this.removeTags} name="Types" items={type_data}/>
+          <CriteriaBox critId={5} takeTags={this.updateTags} removeTags={this.removeTags} name="Category" items={categories_data}/>
+          <CriteriaBox critId={1} takeTags={this.updateTags} removeTags={this.removeTags} name="Gender" items={gender_data}/>
+          <CriteriaBox critId={3} takeTags={this.updateTags} removeTags={this.removeTags} name="Season" items={season_data}/>
+          <CriteriaBox critId={27} takeTags={this.updateTags} removeTags={this.removeTags} name="Quality" items={quality_data}/>
           </div>
         <div style={{marginLeft:'100px'}}>
-          All selected filters: {this.state.allTags.map((item,key)=>{
-                                  return <h5 key={key}>{this.state.allTags[key][1]}</h5>
-                                })}
+          <Button onClick={this.filterData} intent="success" text="Filter that shiet"/>
         </div>
       </div>
     )

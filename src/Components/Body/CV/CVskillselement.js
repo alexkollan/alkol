@@ -14,7 +14,7 @@ class CVskillelement extends Component{
   render(){
     return(
       <Card className="skills" style={{marginBottom:'5px'}}>
-      <h4>&emsp;&nbsp;SKills</h4>
+      <h4 style={{color: "#E5E1DC"}}>&emsp;&nbsp;Skills</h4>
         <ul>
             {this.props.skills.map((skill, key)=>{
                 return <li key={key} style={{/*textAlign: 'center'*/}}>{this.props.skills[key]}</li>

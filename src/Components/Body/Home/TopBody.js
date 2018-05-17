@@ -14,12 +14,12 @@ class TopBody extends Component {
 
         <div >
            
-           <Card  style={{backgroundColor: '#182026'}} className="cardTop" interactive={false} elevation={Elevation.ZERO}>
+           <Card   className="cardTop" interactive={false} elevation={Elevation.ZERO}>
             <div className="topContainer">
               <img className="myFace" src={myFace} alt="Pic of my face." />
               <div className="greetText">
                 <h1>Hey y'all! My name is <code>{name}</code></h1><br/>
-                <h4 style={{color: '#A7B6C2'}}>Welcome to my all around site, <br/>where you can get to know me better ;)</h4>
+                <h4>Welcome to my all around site, <br/>where you can get to know me better ;)</h4>
               </div>
             </div>
             <MediaQuery maxWidth={767}>

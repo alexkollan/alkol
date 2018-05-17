@@ -52,7 +52,7 @@ class Element extends Component {
                       <td style={{width: '80vw', borderBottom: '1px solid rgba(201,207,211, 0.2)'}}><h5>{this.props.desc}</h5></td>
                     </tr>
                     <tr>
-                      <td><h5><i>Tag</i></h5></td>
+                      <td><h5 ><i >Tag</i></h5></td>
                       <td style={{width: '80vw'}}>
                           {this.props.characteristic.map((element,i) => {
                             return <Tag key={i} interactive={true} intent={Intent.WARNING} className=".pt-intent-success" style={{margin:'2px'}}>{element} </Tag>
