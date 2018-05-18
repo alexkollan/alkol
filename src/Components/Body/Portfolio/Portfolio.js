@@ -8,7 +8,7 @@ import MediaQuery from 'react-responsive';
 
 class Portfolio extends Component {
     state={
-      img: ainb
+      img: github
     }
     goTo = (target) => {
       console.log(target);
@@ -37,7 +37,7 @@ class Portfolio extends Component {
           <MediaQuery minWidth={1201}>
             <Menu className="portfolioMenu">
 
-                <MenuItem onClick={()=>this.setState({img:github})} icon={<Icon icon={<i className="devicon-github-plain"></i>} color="#77654A"/>}  text="Github" />
+                <MenuItem onClick={()=>this.setState({img:github})}  icon={<Icon icon={<i className="devicon-github-plain"></i>} color="#77654A"/>}  text="Github" />
              
                 <MenuDivider/> 
        
@@ -66,6 +66,7 @@ class Portfolio extends Component {
               
               </ButtonGroup>
             </MediaQuery>
+            <h4 style={{marginTop:'20px', color:'#47341B'}}>Click the preview to visit!</h4>
             <Card onClick={()=>this.goTo(this.state.img)} interactive={true} elevation={Elevation.ONE} className="portfolioContent">
               <img className="portfolioImg" src={this.state.img} alt="Smiley face"/>
             </Card>

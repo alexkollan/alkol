@@ -130,12 +130,7 @@ body {
   background: rgba(0, 0, 0, 0);
 }
 
-.greetText {
-  text-align: center;
-  /* margin-top: 100px; */
-  margin: 5% auto;
-  max-height: 100px;
-}
+
 h1 {
   color: #564c3d !important;
 }
@@ -151,7 +146,7 @@ h4 {
   padding: 10px !important;
   width: 100%;
   /* position:fixed; */
-  bottom:0;
+  /* bottom:0; */
   /* height: 100px; */
   margin-top: 10px;
 }
@@ -172,19 +167,19 @@ i code {
 
 
 .cardTop {
-  height: 30vh;
+  /* height: 30vh; */
   background: #ddd5ca;
   border-bottom: 0px !important;
   box-shadow: none;
 }
 
 .homeContainer {
-  height: 82vh;
+  /* height: 82vh; */
 }
 
 .topContainer {
   display: flex;
-  height: 250px;
+  /* height: 250px; */
   /* flex-direction: column; */
 }
 
@@ -196,7 +191,81 @@ i code {
   border-radius: 150px;
   /* border: 2px solid #202B33; */
   /* box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 1); */
+  
 }
+.greetText {
+  text-align: center;
+  /* margin-top: 100px; */
+  margin: 5% auto;
+  max-height: 100px;
+  
+}
+div.cardTop p{
+  font-size: 1.2em;
+  color: #564C3D;
+  font-weight: 500;
+  margin-top: 10vh;
+}
+.techContainer{
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 5px 5vw 50px 5vw;
+  box-shadow: inset 0px 0px 11px -2px rgb(49, 33, 9);
+  /* box-shadow:  0px 0px 10px 0px rgb(49, 33, 9); */
+  /* border: 1px solid rgb(109, 93, 76); */
+  padding: 20px 0px 20px 0px;
+  border-radius: 10px;
+  background: rgb(214, 206, 195)
+}
+.tech{
+  
+  max-height: 80px !important;
+  max-width: 15%;
+  /* margin: 0px 30px 0px 0px; */
+
+}
+.tech:hover{
+  cursor: pointer;
+}
+.html5{
+ 
+}
+.css3{
+
+}
+.js{
+
+}
+.jquery{
+
+}
+.es6{
+
+}
+.react{
+
+}
+.redux{
+
+}
+.node{
+
+}
+.node{
+
+}
+.npm{
+
+}
+.webpack{
+
+}
+.vscode{
+
+}
+
 
 .myFace:hover {
   border: 2px solid #bfccd6;
@@ -386,12 +455,15 @@ i code {
   float: left;
   position: relative;
   margin-top: 200px;
+  margin-left: 17px;
+  box-shadow: 1px 1px 10px -1px rgba(73, 55, 17, 0.884) !important;
+  border: 1px solid rgba(156, 127, 73, 0.308);
 }
 .portfolioContent{
   /* height: 70vh; */
   width: 75vw;
   /* min-width: 500px; */
-  margin: 50px 20vw;
+  margin: 20px 20vw;
   padding: 0px;
   /* box-shadow: 0px 0px 15px 1px rgba(70, 44, 6, 0.836); */
   border-radius: 10px;
@@ -454,6 +526,8 @@ i code {
     display: flex !important;
    justify-content: center;
    flex-flow: row wrap;
+   margin-left: 0px;
+
   }
   .portfolioMenu button:hover{
     background: rgba(179, 176, 152, 0.24) !important;
@@ -472,7 +546,11 @@ i code {
     width: 100%;
     /* box-shadow: 0px 0px 15px 1px rgba(70, 44, 6, 0.836); */
     /* border-radius: 10px; */
-    margin: 50px 0vw;
+    margin: 0px 0vw;
+  }
+  .footer{
+    position: 
+    bottom 0;
   }
 }
 
@@ -485,7 +563,7 @@ i code {
     /* visibility: hidden; */
   }
   .homeContainer {
-    height: 100vh;
+    /* height: 100vh; */
   }
   .work {
     width: 100%;
@@ -545,7 +623,7 @@ i code {
     flex-direction: column;
   }
   .cardTop {
-    height: 80vh;
+    /* height: 80vh; */
   }
   .cvCard {
     margin: 0px;
