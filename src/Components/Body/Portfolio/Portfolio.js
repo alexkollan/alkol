@@ -4,6 +4,9 @@ import ainb from '../../../images/ainb.png';
 import alkol from '../../../images/alkol.png';
 import codepen from '../../../images/codepen.png';
 import github from '../../../images/github.png';
+import crowdpolicy from '../../../images/crowdpolicy.png';
+import finteliox from '../../../images/finteliox.png';
+import pancreta from '../../../images/pancreta.png';
 import MediaQuery from 'react-responsive';
 
 class Portfolio extends Component {
@@ -24,7 +27,16 @@ class Portfolio extends Component {
           break;
         case github:
           window.open('https://github.com/alexkollan', '_blank');
-          break;
+        break;
+        case finteliox:
+          window.open('https://finteliox.com/', '_blank');
+        break;
+        case crowdpolicy:
+          window.open('https://www.crowdpolicy.com/', '_blank');
+        break;
+        case pancreta:
+          window.open('', '');
+        break;
         default:
           
           break;
@@ -50,6 +62,18 @@ class Portfolio extends Component {
                 <MenuDivider/> 
      
                 <MenuItem onClick={()=>this.setState({img:alkol})} icon={<Icon icon={<i className="devicon-react-original"></i>} color="#77654A"/>}  text="AlKol" />
+
+                <MenuDivider/> 
+     
+                <MenuItem onClick={()=>this.setState({img:crowdpolicy})} icon={<Icon icon={<i className="devicon-react-original"></i>} color="#77654A"/>}  text="Crowdpolicy" />
+
+                <MenuDivider/> 
+     
+                <MenuItem onClick={()=>this.setState({img:finteliox})} icon={<Icon icon={<i className="devicon-react-original"></i>} color="#77654A"/>}  text="Fintelio X" />
+                
+                <MenuDivider/> 
+     
+                <MenuItem onClick={()=>this.setState({img:pancreta})} icon={<Icon icon={<i className="devicon-react-original"></i>} color="#77654A"/>}  text="Pancreta Bank" />
                 
             </Menu>
             </MediaQuery>

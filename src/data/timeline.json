@@ -4,7 +4,7 @@
         "year": "Sep 2019 - Today",
         "title": "Front-End Engineer @Crowdpolicy",
         "description": "I am mainly a Front-End Dev, but I am doing multiple other projects at the same time!",
-        "long_description": "We all super love JS. But Wordpress Php is fine too. But what about developing a chatbot with an NLU behind it. I am mainly a Front-End Dev, but I am doing multiple other projects at the same time!",
+        "long_description": "We all have a deep love for Javascript, but Wordpress / Php is fine too. But what about developing a chatbot with an NLU behind it (with Javascript!). I am mainly a Front-End Dev, but I am doing multiple other projects at the same time!",
         "characteristic": ["work", "it", "cv", "job"]
 
         
@@ -13,17 +13,17 @@
         
         "year": "Jan 2018 -  Jul 2018",
         "title": "Growth Manager/Coordinator @EscapeAll",
-        "description": "Responsible for the platform's growth outside of Greece's borders.",
-        "long_description": "",
+        "description": "Responsible for the platform's growth outside of Greece's borders. Did some development in ReactJS too.",
+        "long_description": "Responsible for the platform's growth outside of Greece's borders. Did some development in ReactJS too.",
         "characteristic": ["work", "it", "cv", "job"]
 
         
     },
     "e21":{
         
-        "year": "2017 - Today",
-        "title": "Store Manager @Trapped Escape Rooms Chalandri",
-        "description": "Store Manager, Systems Maintenance, Head GM",
+        "year": "2017 - 2019",
+        "title": "General Manager @Trapped Escape Rooms Chalandri",
+        "description": "Manager of E.G Enjoy Gaming I.K.E., Systems Maintenance, Head GM",
         "long_description": "",
         "characteristic": ["work", "other", "cv", "job"]
 
@@ -52,7 +52,7 @@
     "e18":{
         
         "year": "Jan 2016 - Apr 2016",
-        "title": "Web Developer / Technology Consultant @Associates in Business",
+        "title": "(Internship) Web Developer @Associates in Business",
         "description": "In charge of the front/back-end actualization of the company's web site, as well as the consultation of senior management about technological upgrades of the company.",
         "long_description": "In charge of the front/back-end actualization of the company's web site, as well as the consultation of senior management about technological upgrades of the company.",
         "characteristic": ["work", "it", "cv", "job"]
