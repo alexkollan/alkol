@@ -1,243 +1,277 @@
 {
-    "e23":{
-        
-        "year": "Sep 2019 - Today",
+    "e24": {
+        "year": "Feb 2020 - Today",
+        "title": "Service Delivery Engineer @Persado",
+        "description": "• Generate code & graphics for digital marketing campaigns across multiple channels, including web pages, social media and email. • Develop tools & applications to increase efficiency, automate tasks. • Platform management, configuration & integration. • Technical implementation of campaigns, as well as reports extraction and monitoring. • Follow rigorous QA processes to ensure flawless delivery of all assets. • Advise on test feasibility, best practices and web trends.",
+        "long_description": "• Generate code & graphics for digital marketing campaigns across multiple channels, including web pages, social media and email. • Develop tools & applications to increase efficiency, automate tasks. • Platform management, configuration & integration. • Technical implementation of campaigns, as well as reports extraction and monitoring. • Follow rigorous QA processes to ensure flawless delivery of all assets. • Advise on test feasibility, best practices and web trends.",
+        "characteristic": [
+            "work",
+            "it",
+            "cv",
+            "job"
+        ]
+    },
+    "e23": {
+        "year": "Sep 2019 - Feb 2020",
         "title": "Front-End Engineer @Crowdpolicy",
         "description": "I am mainly a Front-End Dev, but I am doing multiple other projects at the same time!",
         "long_description": "We all have a deep love for Javascript, but Wordpress / Php is fine too. But what about developing a chatbot with an NLU behind it (with Javascript!). I am mainly a Front-End Dev, but I am doing multiple other projects at the same time!",
-        "characteristic": ["work", "it", "cv", "job"]
-
-        
+        "characteristic": [
+            "work",
+            "it",
+            "cv",
+            "job"
+        ]
     },
-    "e22":{
-        
+    "e22": {
         "year": "Jan 2018 -  Jul 2018",
         "title": "Growth Manager/Coordinator @EscapeAll",
         "description": "Responsible for the platform's growth outside of Greece's borders. Did some development in ReactJS too.",
         "long_description": "Responsible for the platform's growth outside of Greece's borders. Did some development in ReactJS too.",
-        "characteristic": ["work", "it", "cv", "job"]
-
-        
+        "characteristic": [
+            "work",
+            "it",
+            "cv",
+            "job"
+        ]
     },
-    "e21":{
-        
+    "e21": {
         "year": "2017 - 2019",
         "title": "General Manager @Trapped Escape Rooms Chalandri",
         "description": "Manager of E.G Enjoy Gaming I.K.E., Systems Maintenance, Head GM",
         "long_description": "",
-        "characteristic": ["work", "other", "cv", "job"]
-
-        
+        "characteristic": [
+            "work",
+            "other",
+            "cv",
+            "job"
+        ]
     },
-    "e20":{
-        
+    "e20": {
         "year": "May 26 2017",
         "title": "Paper title: 'Consensus-based data fusion in military IoT / multi agent system paradigm'",
         "description": "Paper Published @Operational Planning, Technological Innovations and Mathematical Applications (OPTIMA)",
         "long_description": "",
-        "characteristic": ["education", "conference", "cv", "publications"]
-
-        
+        "characteristic": [
+            "education",
+            "conference",
+            "cv",
+            "publications"
+        ]
     },
-    "e19":{
-        
+    "e19": {
         "year": "Oct 2016 - Oct 2017",
         "title": "Lecturer - Researcher @IST College",
         "description": "Lectured many modules, most of them were on Computer Science, Web Development and Prject Management",
         "long_description": "Introduction in Computers (level 4) / Practical Project II with HTML5/CSS3 Javascript(jQuery) (level 4) / Practical Project IV with HTML5/CSS3 Javascript(jQuery), mySQL, PHP, Apache (level 5) / Algorithms I (Stack, Queue, problem solving) / Programming V (Client-Server) using nodeJS, expressJS, mongoDB and templating/server-side rendering using EJS. (level 5)",
-        "characteristic": ["work", "it", "cv", "job"]
-
-        
+        "characteristic": [
+            "work",
+            "it",
+            "cv",
+            "job"
+        ]
     },
-    "e18":{
-        
+    "e18": {
         "year": "Jan 2016 - Apr 2016",
         "title": "(Internship) Web Developer @Associates in Business",
         "description": "In charge of the front/back-end actualization of the company's web site, as well as the consultation of senior management about technological upgrades of the company.",
         "long_description": "In charge of the front/back-end actualization of the company's web site, as well as the consultation of senior management about technological upgrades of the company.",
-        "characteristic": ["work", "it", "cv", "job"]
-
-        
+        "characteristic": [
+            "work",
+            "it",
+            "cv",
+            "job"
+        ]
     },
-    "e17":{
-        
+    "e17": {
         "year": "Jan 2015 - Oct 2015",
         "title": "Networks and Systems Engineer / Infrastracture Assistant Administrator @KEPYES",
         "description": "Hellenic Armed Forces, Ministry of Defence, KEPYES",
         "long_description": "Administration and maintenance of the Hellenic Army General Staff (HAGS) local area network. / Control, maintenance and support of the network's main servers, routers/switches and backup systems. / Administration and maintenance of technological solutions for the security augmentation of the Hellenic Army's classified Network . / Control and monitoring of network operations and infrastructure of the HAGS network. / Installation, support and repair of the IT systems of the HAGS, as well as the installation and configuration of endpoint users' PC. / Technical support for LAN endpoint users. / Technical Support for the Information Systems of the Operations Headquarters of the Hellenic Army. / Configuration and modification of Windows Server. / The Training of new Personnel in all of the above.",
-        "characteristic": ["work", "it", "cv", "job"]
-
-        
+        "characteristic": [
+            "work",
+            "it",
+            "cv",
+            "job"
+        ]
     },
-    "e16":{
-        
+    "e16": {
         "year": "Jul 18 2013",
         "title": "Paper title: 'Cooperative sensing in distributed military environment using smart devices'",
         "description": "Paper Published @World Scientific and Engineering Academy and Society (WSEAS) 17th International Multiconference on Circuits, Systems, Communications and Computers, 2013 (17th CSCC)",
         "long_description": "",
-        "characteristic": ["education", "conference", "cv", "publications"]
-
-        
+        "characteristic": [
+            "education",
+            "conference",
+            "cv",
+            "publications"
+        ]
     },
-    "e15":{
-        
+    "e15": {
         "year": "2012 - 2014",
         "title": "University of Hertfordshire / Master of Science (M.Sc.), Mobile Computing, Distinction",
         "description": "Thesis title: 'Distributed control and administration of mobile agents in an ad hoc networking environment.'",
         "long_description": "",
-        "characteristic": ["education", "higher", "cv", "edu"]
-
-        
+        "characteristic": [
+            "education",
+            "higher",
+            "cv",
+            "edu"
+        ]
     },
-    "e14":{
-        
+    "e14": {
         "year": "Jan 2009 - Feb 2009",
         "title": "Web Developer/Designer @Endoscopic Center of Athens",
         "description": "Web Design / Development of www.endoskopiko.gr (now offline)",
         "long_description": "One of my first jobs as a web developer. Deisgned and implemented the company's website.",
-        "characteristic": ["work", "it", "cv", "job"]
-
-        
+        "characteristic": [
+            "work",
+            "it",
+            "cv",
+            "job"
+        ]
     },
-    "e13":{
-        
+    "e13": {
         "year": "2008 - 2012",
         "title": "University of Hertfordshire / Bachelor of Science (B.Sc.)), Information Technology (Business Systems Specialist), Honours",
         "description": "Final project Title: 'A Prototype Software attempt to produce a S.W.O.T analysis from Porter's Five Force Model.'",
         "long_description": "",
-        "characteristic": ["education", "higher", "cv", "edu"]
-
-        
+        "characteristic": [
+            "education",
+            "higher",
+            "cv",
+            "edu"
+        ]
     },
-    "e12":{
-        
+    "e12": {
         "year": "2007 - 2008",
         "title": "IT Specialist / Cashier @Virus NetCafe",
         "description": "A Job to remember! Made good friends, met new people, learned a lot!",
         "long_description": "In charge of the store's systems. Cashier.",
-        "characteristic": ["work", "it", "cv", "job"]
-
-        
+        "characteristic": [
+            "work",
+            "it",
+            "cv",
+            "job"
+        ]
     },
-    "e11":{
-        
+    "e11": {
         "year": "2005",
         "title": "High School @Eniaio Lykeion Palaiou Psychikou",
         "description": "Well! High School! Full of good and poor choices! A time to remember!",
         "long_description": "",
-        "characteristic": ["education", "school"]
-
-        
+        "characteristic": [
+            "education",
+            "school"
+        ]
     },
-    "e10":{
-        
+    "e10": {
         "year": "2004",
         "title": "1st Job!!! DJ @Αχαιοί Bar Cafe ",
         "description": "This was my first job! I was very excited making my own money for the first time in my life! :D",
         "long_description": "",
-        "characteristic": ["work", "other"]
-
-        
+        "characteristic": [
+            "work",
+            "other"
+        ]
     },
-    "e9":{
-        
+    "e9": {
         "year": "2002",
         "title": "Athletics / Long Jump ",
         "description": "I was trasining for 4 years won some medals almost made it to the Panhellenic Championship but then.. I took an arrow in the knee.",
         "long_description": "",
-        "characteristic": ["hobbies", "athletics"]
-
-        
+        "characteristic": [
+            "hobbies",
+            "athletics"
+        ]
     },
-    "e8":{
-
+    "e8": {
         "year": "2001",
         "title": "Lead of school's Voleyball Team",
         "description": "I was the leader of our school's volleyball team. We played in several school championships.",
         "long_description": "",
-        "characteristic": ["hobbies", "athletics"]
-
+        "characteristic": [
+            "hobbies",
+            "athletics"
+        ]
     },
-    "e7":{
-
+    "e7": {
         "year": "2001",
         "title": "Middle School @Ionios School",
         "description": "Did my middle school years at Ionios School. Ionios is a very strict school, not for a kid like me.",
         "long_description": "",
-        "characteristic": ["education", "school"]
-
+        "characteristic": [
+            "education",
+            "school"
+        ]
     },
-    "e6":{
-        
+    "e6": {
         "year": "2000",
         "title": "Tennis",
         "description": "Started learning to play tennis. I did lessons for about ~4 years.",
         "long_description": "",
-        "characteristic": ["hobbies", "athletics"]
-
-        
+        "characteristic": [
+            "hobbies",
+            "athletics"
+        ]
     },
-
-    "e5":{
-        
+    "e5": {
         "year": "1998",
         "title": "Chess School",
         "description": "Yea had to learn chess as well. Was a nice brain-teasing experience.",
         "long_description": "",
-        "characteristic": ["hobbies", "creative"]
-
-        
+        "characteristic": [
+            "hobbies",
+            "creative"
+        ]
     },
-    "e4":{
-        
+    "e4": {
         "year": "1995",
         "title": "Primary School @LFH",
         "description": "Same School! Just add the word 'primary' in front of school! :)",
         "long_description": "",
-        "characteristic": ["education", "school"]
-
-        
+        "characteristic": [
+            "education",
+            "school"
+        ]
     },
-    "e3":{
-        
+    "e3": {
         "year": "1994",
         "title": "Piano Studies (1994 ~ 2014)",
         "description": "When I was 5 years old, I started playing the Piano. For about 20 years I continued my studies on music up until the point I decided that music will not be my long term career goal.",
         "long_description": "",
-        "characteristic": ["hobbies", "creative"]
-
-        
+        "characteristic": [
+            "hobbies",
+            "creative"
+        ]
     },
-    "e2":{
-        
+    "e2": {
         "year": "1994",
         "title": "Kindergarden LFH",
         "description": "Started my awsome journey at the Lycée Franco-Hellénique (LFH) now known as 'Lycée Franco-Hellénique Eugène Delacroix' at Agia Paraskevi.",
         "long_description": "",
-        "characteristic": ["education", "school"]
-
-        
+        "characteristic": [
+            "education",
+            "school"
+        ]
     },
-    "e1":{
-        
+    "e1": {
         "year": "1993",
         "title": "Preprep School",
         "description": "Started prepep schoolat a nice place which I do not remember the name. :P",
         "long_description": "",
-        "characteristic": ["education", "school"]
-
-        
+        "characteristic": [
+            "education",
+            "school"
+        ]
     },
-    "e0":{
-        
+    "e0": {
         "year": "1989",
         "title": "Born",
         "description": "Describe what? Yea TADA I was born in Marousi, Athens, Attica, Greece!",
         "long_description": "",
-        "characteristic": ["life"]
-
-        
+        "characteristic": [
+            "life"
+        ]
     }
-
-
 }
