@@ -5,7 +5,7 @@
   "homepage": ".",
   "dependencies": {
     "@blueprintjs/core": "^2.3.1",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "font-awesome": "^4.7.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
